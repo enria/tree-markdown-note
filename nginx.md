@@ -10,3 +10,6 @@ server {
 } 
 ```
 
+Linux下编译安装
+
+./configure --with-stream --prefix=/home/yebk/yebk/nginx;make;make install;

@@ -15,7 +15,7 @@
 3. 测试
 
    ```shell
-   ssh {user_name}@{remote_ip}`
+   ssh {user_name}@{remote_ip}
    ```
 
 #### [SCP](https://www.cnblogs.com/zhaofeng555/p/8075279.html)
