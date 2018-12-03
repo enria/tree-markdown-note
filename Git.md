@@ -13,7 +13,13 @@ git commit -m "commit message"
 #### 推送到远程
 
 ```shell
-git push origion master
+git push origin master
+```
+
+#### 拉取到本地
+
+```shell
+git pull 
 ```
 
 #### 中文乱码
