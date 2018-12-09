@@ -28,3 +28,9 @@ git pull
 git config --global core.quotepath false
 ```
 
+#### 记住密码
+
+```shell
+git config --global credential.helper store
+```
+

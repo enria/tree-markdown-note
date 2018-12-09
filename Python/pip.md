@@ -16,6 +16,12 @@ pip install packagename
 pip install packagename -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
 ```
 
+#### 下载安装包到本地
+
+```shell
+ pip download package -d ${DOWNLOAD_FOLDER}
+```
+
 
 
 
