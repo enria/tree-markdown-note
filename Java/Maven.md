@@ -64,6 +64,12 @@ mvn deploy
 mvn deploy -DaltDeploymentRepository=nexus-snapshots::default::http://172.18.31.204:8081/repository/maven-snapshots
 ```
 
+#### 显示依赖树
+
+```shell
+mvn dependency:tree
+```
+
 #### 注意
 
 + 远程仓库没有相应的包时（或者因为网络问题无法下载），在本地也会生成一个pom文件。后面即使在远程仓库下面存在相应的包，maven也不会去下载。要注意删除本地生成出来的文件！
