@@ -2,7 +2,7 @@
 
 ```python
 import pymongo
-client = pymongo.MongoClient("mongodb://{}:{}@{}:{}/{}".format('root', 'mysdpico', '172.18.31.106', 27017, 'admin'))
+client = pymongo.MongoClient("mongodb://{}:{}@{}:{}/{}".format('root', '123456', '172.18.31.106', 27017, 'admin'))
 zhangyd_db = client.zhangyd
 content_company_c = zhangyd_db.content_company
 ```
