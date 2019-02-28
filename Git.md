@@ -32,6 +32,8 @@ git config --global core.quotepath false
 
 ```shell
 git config --global credential.helper store
+
+123
 ```
 
 456
