@@ -162,6 +162,8 @@
    过程中没有出现错误，并且最后输出我们插入的那条记录，则测试成功。
 
    > `val hiveCtx = new HiveContext(sc)`这句会报`there was one deprecation warning`，这是因为较新的版本中会使用更简洁的方式创建`SQL`环境，可以参考下面的`HiveTest`代码文件。
+   > 
+
 ### 在IDEA中，使用Spark连接Hive
 
 `Spark`工作流一般是：
@@ -224,7 +226,10 @@
    再运行文件，如果没有报错，且输出我们插入的记录，则测试成功。
 
 > 我在实现在`IDEA`中直接运行的时候，一直去修改`${SPARK_HOME}`的配置，但是根本不会生效。其实我们在`IDEA`运行的时候，`Spark`环境跟我们安装的`Spark`是独立的。我们只是在`IDEA`中开发项目代码，再打成`jar`包使用安装的`Spark`提交到资源管理器中，各种`provided`作用域的依赖也是为了与`spark-submit`保持相同的环境。
+> 
 
 > 在上面提到`Spark`获取`Hive metastore`的方式是使用`thrift`接口，其实也可以直接连接`MySQL`数据库，这种方式要注意`MySQL`的驱动包要能被加载。
+> 
 
 > 忽略掉了`Hadoop`安装、`Spark`安装、`Spark`开发环境搭建等流程，它们都是比较独立的单元，而且在网上很容易找到相关的教程，这里就不赘述了。
+> 
