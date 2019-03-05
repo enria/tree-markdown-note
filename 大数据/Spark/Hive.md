@@ -162,7 +162,7 @@
    过程中没有出现错误，并且最后输出我们插入的那条记录，则测试成功。
 
    > `val hiveCtx = new HiveContext(sc)`这句会报`there was one deprecation warning`，这是因为较新的版本中会使用更简洁的方式创建`SQL`环境，可以参考下面的`HiveTest`代码文件。
-   > 
+   
 
 ### 在IDEA中，使用Spark连接Hive
 
