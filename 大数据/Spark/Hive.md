@@ -221,7 +221,7 @@
    直接运行应该会报`java.lang.NoClassDefFoundError`，这是因为我们在添加依赖的时候作用域为`provided`，`IDEA`运行时不会加载这个`jar`包，解决方案如下：
 
    1. 点击运行按钮旁边的下拉框，点击`Edit Configurations`
-   2. 勾选右则中间位置的`Incluse dependencies with "Provided" scope`
+   2. 勾选右侧中间位置的`Incluse dependencies with "Provided" scope`
    3. 点击应用
 
    再运行文件，如果没有报错，且输出我们插入的记录，则测试成功。
