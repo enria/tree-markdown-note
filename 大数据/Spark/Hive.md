@@ -104,7 +104,7 @@
 
    验证持久化：
 
-   1. 数据库中`dbs`表存在一条刚才创建库名的记录，`tbls`表存在一条刚才创建库名的记录。
+   1. 数据库中`dbs`表存在一条刚才创建库名的记录，`tbls`表存在一条刚才创建表名的记录。
    2. `HDFS`中有生成插入的记录的文件，位于`/user/hive/warehouse/sparktest.db/contact`目录下，下载该文件可以看到里面有一行`181`。
 
 ### 使用Spark管理Hive
@@ -160,7 +160,6 @@
       ```
 
    > `val hiveCtx = new HiveContext(sc)`这句会报`there was one deprecation warning`，这是因为较新的版本中会使用更简洁的方式创建`SQL`环境，可以参考下面的`HiveTest`代码文件。
-   > 
 
    过程中没有出现错误，并且最后输出我们插入的那条记录，则测试成功。
 
@@ -221,7 +220,7 @@
    直接运行应该会报`java.lang.NoClassDefFoundError`，这是因为我们在添加依赖的时候作用域为`provided`，`IDEA`运行时不会加载这个`jar`包，解决方案如下：
 
    1. 点击运行按钮旁边的下拉框，点击`Edit Configurations`
-   2. 勾选右侧中间位置的`Incluse dependencies with "Provided" scope`
+   2. 勾选右侧中间位置的`Include dependencies with "Provided" scope`
    3. 点击应用
 
    再运行文件，如果没有报错，且输出我们插入的记录，则测试成功。
