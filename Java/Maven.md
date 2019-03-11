@@ -64,11 +64,8 @@ mvn deploy
 mvn deploy -DaltDeploymentRepository=nexus-snapshots::default::http://172.18.31.204:8081/repository/maven-snapshots
 ```
 
-<<<<<<< HEAD
-#### 显示依赖树
-=======
+
 #### 查看依赖树
->>>>>>> 3cb860a893625e373f4e8ba44aad32dfbc39d834
 
 ```shell
 mvn dependency:tree
