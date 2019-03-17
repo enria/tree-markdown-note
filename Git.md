@@ -33,3 +33,10 @@ git config --global core.quotepath false
 ```shell
 git config --global credential.helper store
 ```
+
+#### 代理
+
+```shell
+git config --global https.proxy socks5://127.0.0.1:1080
+```
+
